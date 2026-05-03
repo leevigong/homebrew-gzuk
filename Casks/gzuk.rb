@@ -1,11 +1,11 @@
 cask "gzuk" do
-  version "1.0"
-  sha256 "REPLACE_WITH_SHA256_FROM_RELEASE_SH"
+  version "0.9"
+  sha256 "a2011036284242c51f9a057bf89be67a39a84024f8ad9dc20318804e164667a9"
 
   url "https://github.com/leevigong/gzuk/releases/download/v#{version}/gzuk-#{version}.zip"
   name "그려적어"
   desc "Draw and write directly on your macOS screen"
-  homepage "https://gzuk.app"
+  homepage "https://gzuk-app.vercel.app"
 
   livecheck do
     url :url
