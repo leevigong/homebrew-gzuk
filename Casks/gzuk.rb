@@ -4,19 +4,20 @@ cask "gzuk" do
 
   url "https://github.com/leevigong/gzuk/releases/download/v#{version}/gzuk-#{version}.zip"
   name "그려적어"
-  desc "Draw and write directly on your macOS screen"
-  homepage "https://gzuk-app.vercel.app"
+  desc "Draw and write directly on your screen"
+  homepage "https://gzuk-app.vercel.app/"
+
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
 
   # The app ships Sparkle and self-updates from gzuk-app.vercel.app/appcast.xml.
   # Telling Homebrew "auto_updates true" stops it from forcing a downgrade
   # back to the Cask-pinned version when the user has already silently
   # upgraded via Sparkle.
   auto_updates true
-
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
+  depends_on :macos
 
   app "그려적어.app"
 
