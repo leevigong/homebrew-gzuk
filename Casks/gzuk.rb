@@ -17,7 +17,10 @@ cask "gzuk" do
   # back to the Cask-pinned version when the user has already silently
   # upgraded via Sparkle.
   auto_updates true
-  depends_on :macos
+  # Matches LSMinimumSystemVersion (14.0) in the app bundle — without the
+  # bound, Homebrew installs happily on older macOS and the app only fails
+  # once the user tries to launch it.
+  depends_on macos: :sonoma
 
   app "그려적어.app"
 
