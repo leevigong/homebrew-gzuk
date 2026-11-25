@@ -1,6 +1,6 @@
 cask "gzuk" do
-  version "1.0.6"
-  sha256 "6eea00155cf61f57ccfa9ee9901b7f9f9918c37d2f285ea462699ac6017a97a7"
+  version "1.0.7"
+  sha256 "1caed8a346b1b1d1944db25e4d1bd745a35e2b221f2e01c98e3872b6a4baa1e2"
 
   url "https://github.com/leevigong/gzuk/releases/download/v#{version}/gzuk-#{version}.zip"
   name "그려적어"
